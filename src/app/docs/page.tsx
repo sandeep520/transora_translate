@@ -110,31 +110,7 @@ export default function DocsPage() {
         </CardContent>
       </Card>
 
-      <Card className="glass">
-        <CardHeader>
-          <CardTitle>Configuration</CardTitle>
-        </CardHeader>
-        <CardContent className="flex flex-col gap-3 text-sm text-muted-foreground">
-          <p>
-            The translation provider is configured through environment variables
-            (see <code className="rounded bg-muted px-1">.env.example</code>):
-          </p>
-          <pre className="overflow-x-auto rounded-lg border bg-muted/50 p-3 text-xs">
-{`NEXT_PUBLIC_TRANSLATION_API=google    # or "mymemory"
-NEXT_PUBLIC_MYMEMORY_EMAIL=            # optional, lifts MyMemory's free limit`}
-          </pre>
-          <p>
-            The service layer is provider-agnostic. To add Google Translate,
-            DeepL, OpenAI, or Azure, implement the{" "}
-            <code className="rounded bg-muted px-1">TranslationProvider</code>{" "}
-            interface and register it in{" "}
-            <code className="rounded bg-muted px-1">
-              src/services/translation.ts
-            </code>
-            .
-          </p>
-        </CardContent>
-      </Card>
+     
 
       <Card className="glass">
         <CardHeader>
